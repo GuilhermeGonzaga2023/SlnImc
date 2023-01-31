@@ -1,0 +1,89 @@
+﻿dados BD
+imcfinal.mssql.somee.com
+guiimcfinal_SQLLogin_1
+baje8zjv8x
+
+MUDAR TELA IMC PARA AVALIACAO
+RESOLVER DIETA DENTRO DE AVALIAÇÃO, INSERIR DIETA APENAS. SO VAI SER FEITA A DIETA SE FIZER AVALIAÇÃO
+NA TELA USUARIO ELE VAI VER A AVALIACAO USANDO A PROCEDURE PS_TUDO E VAI PREENCHER OS DADOS. E VAI TER UM BOTAO PARA CALCULAR PARA VER O IMC, COM OS DADOS JA PREENCHIDOS
+
+
+
+
+create table usu(
+idUsu int identity,
+nomeUsu varchar(100) not null,
+loginUsu varchar(25) not null unique,
+senhaUsu varchar(100) not null,
+dataDeNascimentoUsu date not null,
+perfilUsu varchar(12) not null,
+telefoneUsu char(11)
+constraint pk_idUsu primary key(idUsu) 
+)
+Go
+
+create procedure pi_usu
+@nomeUsu varchar(100),
+@loginUsu varchar(25),
+@senhaUsu varchar(100),
+@dataDeNascimentoUsu date,
+@perfilUsu varchar(10),
+@telefoneUsu char(11)
+as
+insert into usu
+(nomeUsu,loginUsu,senhaUsu,dataDeNascimentoUsu,perfilUsu,telefoneUsu)
+values
+(@nomeUsu,@loginUsu,@senhaUsu,@dataDeNascimentoUsu,@perfilUsu,@telefoneUsu)
+
+GO
+
+create procedure ps_usu
+@chaveBuscaUsu varchar(25)
+as
+select nomeUsu,loginUsu,dataDeNascimentoUsu,perfilUsu,telefoneUsu from usu
+where loginUsu=@chaveBuscaUsu 
+GO
+
+create procedure pd_usu
+@chaveDeleteUsu varchar(25)
+as
+delete usu
+where loginUsu=@chaveDeleteUsu
+Go
+
+
+Go
+create table proImc(
+idPro int identity,
+crmPro char(6) not null,
+loginPro varchar(25) not null unique,
+senhaPro varchar(6) not null,
+dataNascimentoPro date not null,
+perfilPro char(3) not null,
+telefonePro char(11) not null
+constraint pk_idPro primary key(idPro) 
+)
+create table avaliacao(
+idAvaliacao int identity,
+idUsuario int,
+idPro int,
+dataAvaliacao date not null,
+pesoAvaliacao numeric not null,
+alturaAvaliacao numeric not null,
+constraint pk_idAvaliacao primary key(idAvaliacao),
+constraint fk_avaliacao_idUsuario foreign key (idUsuario)  references usuImc(idUsuario),
+constraint fk_avaliacao_idPro foreign key (idPro)  references proImc(idPro)
+)
+constran
+
+create table dieta(
+idDieta int identity,
+idUsuario int,
+idPro int,
+idAvaliacao int,
+restricoesAlimentares varchar(100) not null,
+dieta varchar(100) not null,
+dataDieta date not null
+constraint pk_idDieta primary key(idDieta),
+constraint fk_dieta_idUsuario foreign key (idUsuario) references usuImc (idUsuario),
+constraint fk_dieta_idPro foreign key (idPro) references proImc (idPro)

@@ -1,0 +1,438 @@
+﻿* {
+    text-decoration: none;
+}
+body {
+}
+#form1 {
+/*    border: solid black 5px;*/    
+    background-color: #b9dea8;
+    flex-direction: column;
+    display: flex;
+    /* jeito mais facil de alinha no centro*/
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    margin: auto;
+    /*    width: 550px;
+    height: 700px;
+*/ /*border-radius: 10px;*/
+}
+#menu {
+    /*    border: solid black 5px;*/
+    background-image: url("../fundos/fundoMenu.png");
+    background-position:center;
+    flex-direction: column;
+    display: flex;
+    /* jeito mais facil de alinha no centro*/
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    margin: auto;
+    /*    width: 550px;
+    height: 700px;
+*/ /*border-radius: 10px;*/
+}
+.cabecalho {
+    height: 50px;
+    width: 98.5%;
+    /*jeito de alinhar na horizontal*/
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #47793b;
+    border-bottom: double black 10px;
+    border-right: double black 10px;
+    border-left: double black 10px;
+}
+.cabecalho nav{
+    text-align:center;
+}
+h1{
+    font-family:cursive;
+    text-align:center;
+    padding-top:15px;
+}
+h2 {
+    font-family: cursive;
+    text-align: center;
+}
+.geral {
+    display:flex;
+    flex-direction:column;
+    /*outo jeito de alinhar no centro*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:auto;
+    margin-bottom:auto;
+    gap:1rem;
+}
+.menu {
+    margin-left: auto;
+    margin-right: auto;    
+}
+.login {
+    border: double #47793b 10px;
+    height:600px;
+    width: 400px;
+    /*outo jeito de alinhar no centro*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding:0;
+    text-align:center;
+}
+.backtxt {
+    color: #47793b;
+}
+#ddlPerfil {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 25px;
+    /*outo jeito de alinhar no centro*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30%;
+    margin-bottom: 0;
+}
+.login .btns {
+    justify-content:center;
+    padding:50px;
+    gap:1rem;
+    /*outo jeito de alinhar no centro*/
+    margin-left: auto;
+    margin-right: auto;
+}
+.login #txtLogin {
+    display: flex;
+    flex-direction: column;
+    /*outo jeito de alinhar no centro*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 0;
+    width: 150px;
+    height: 25px;
+    /*    background-color: #d2ddc7;
+*/
+}
+.login #txtSenha {
+    display: flex;
+    flex-direction: column;
+    /*outo jeito de alinhar no centro*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 0;
+    width: 150px;
+    height: 25px;
+}
+.login #btnLogar {
+    width: 100px;
+    height: 30px;
+}
+.login #btnCadastrar {
+    width: 100px;
+    height: 30px;
+
+}
+.cadastro {
+    border: double #47793b 10px;
+    height:500px;
+    width: 400px;
+    /*outo jeito de alinhar no centro*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align:center;
+}
+.cadastro p{
+    padding:10px;
+}
+.cadastro #btnCadastrar{
+    width:100px;
+    border-radius: 10px;
+
+}
+.AvaPaciente {
+    border: double #47793b 10px;
+    height:800px;
+    width: 400px;
+    /*outo jeito de alinhar no centro*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: auto;
+    text-align:center;
+}
+.AvaPaciente p{
+    padding:10px;
+}
+.AvaPaciente .lblAva{
+    display:flex;
+    flex-direction:column;
+    padding:10px;
+}
+.ava {
+    border: double #47793b 10px;
+    height: 500px;
+    width: 400px;
+    /*outo jeito de alinhar no centro*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+.dieta {
+    border: double #47793b 10px;
+    height: 500px;
+    width: 400px;
+    /*outo jeito de alinhar no centro*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+}
+.GRID{
+    display:flex;
+    flex-direction:row;
+}
+.quadrado1 {
+    flex-direction: column;
+    border: double #47793b 10px;
+    height: 500px;
+    width: 400px;
+    /*outo jeito de alinhar no centro*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    margin-bottom: auto;
+    text-align: center;
+}
+.quadradoDieta {
+    flex-direction: column;
+    border: double #47793b 10px;
+    height: 450px;
+    width: 400px;
+    /*outo jeito de alinhar no centro*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    margin-bottom: auto;
+    text-align: center;
+}
+.quadradoAva {
+    flex-direction: column;
+    border: double #47793b 10px;
+    height: 400px;
+    width: 400px;
+    /*outo jeito de alinhar no centro*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    margin-bottom: auto;
+    text-align: center;
+}
+.quadradoResultado {
+    flex-direction: column;
+    border: double #47793b 10px;
+    height: 300px;
+    width: 300px;
+    /*outo jeito de alinhar no centro*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    margin-bottom: auto;
+    text-align: center;
+}
+.quadrado2 {
+    border: double #47793b 10px;
+    height:300px;
+    width:900px;
+    /*outo jeito de alinhar no centro*/
+    margin-left: 0;
+    margin-right: auto;
+    margin-top: 250px;
+    margin-bottom: auto;
+    padding-top:20px;
+}
+.quadradoGerenciarDieta {
+    border: double #47793b 10px;
+    height:300px;
+    width:1100px;
+    /*outo jeito de alinhar no centro*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: 250px;    
+    padding-top:20px;
+}
+#msgErro{
+    text-align:center;
+}
+#GridMedicos {
+    margin-left: auto;
+    margin-right: auto;
+}
+#GridUsuarios {
+    margin-left: auto;
+    margin-right: auto;
+}
+#GridAvaliacao {
+    margin-left: auto;
+    margin-right: auto;
+}
+#GridAvaPac {
+    margin-left: auto;
+    margin-right: auto;
+}
+.resultado {
+    border: double #47793b 10px;
+    height: 500px;
+    width: 400px;
+    /*outo jeito de alinhar no centro*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+.usuarios {
+    border: double #47793b 10px;
+    height: 500px;
+    width: 400px;
+    /*outo jeito de alinhar no centro*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+nav, a{
+    color:black;
+    font-size:1.2em;
+    text-decoration:none;
+    padding:15px;
+}
+#btnLimpar, #btnCalcular, #btnVoltar{
+    /*jeito de alinhar na horizontal*/
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 100px;
+    border-radius: 10px;
+}
+.txtUsuarios{
+    display:flex;
+    flex-direction:column;
+    gap:0.5rem;
+}
+#btnAtualizar{
+    border-radius:10px;
+    color:black;
+}
+#GridUsuarios{
+    width:100px;
+}
+#GridMedicos{
+    text-align:center;
+    width:100px;
+}
+.txtMedicos {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/*ANIMAR BOTOES
+*/
+#btnVoltar:hover {
+    background-color: #47793b;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}#btnCalcular:hover {
+    background-color: #47793b;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+ #btnLogar:hover {
+    background-color: #47793b;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+ #btnCadastrar:hover {
+    background-color: #47793b;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+#btnLimpar:hover {
+    background-color: #47793b;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+#btnListar:hover {
+    background-color: #47793b;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+#btnListar{
+    border-radius:10px;
+}
+#btnAtualizar:hover {
+    background-color: #47793b;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+#btnAtualizar{
+    border-radius:10px;
+}
+#btnExcluir:hover {
+    background-color: #47793b;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+#btnExcluir{
+    border-radius:10px;
+}
+#btnCriarAva:hover {
+    background-color: #47793b;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+#btnCriarAva {
+    border-radius:10px;
+}
+#btnPesquisar:hover {
+    background-color: #47793b;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+#btnPesquisar {
+    border-radius:10px;
+}
+#btnInserir:hover {
+    background-color: #47793b;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+#btnInserir {
+    border-radius:10px;
+}
+#btnCriarDieta:hover {
+    background-color: #47793b;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+#btnCriarDieta {
+    border-radius:10px;
+}
