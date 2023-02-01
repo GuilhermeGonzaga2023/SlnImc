@@ -22,7 +22,7 @@
         <div class="GRID">
             <div class="quadradoDieta">
 
-                <h2>Dieta</h2>
+                <h2>Criar Dieta</h2>
                     <p>
                         <asp:Label ID="Label1" runat="server" Text="Dieta para o paciente:"></asp:Label>
                         <asp:Label ID="lblNome" runat="server" Text=""></asp:Label>
@@ -32,6 +32,7 @@
                         <asp:Button ID="btnListar" runat="server" Text="Listar" OnClick="btnListar_Click" />
                      </p>
 
+                        <asp:Label ID="lblAviso" runat="server" Text="Caso o paciente não queira uma dieta crie mesmo assim mas com os campos em branco"></asp:Label>
                     <p>
                         <asp:Label ID="lblNomeDieta" runat="server" Text="dieta: "></asp:Label>
                         <asp:TextBox ID="txtNomeDieta" runat="server" placeholder="Dieta" TextMode="MultiLine" Rows="4" style="resize: none"></asp:TextBox>
@@ -50,7 +51,7 @@
                         <asp:Label ID="msgErro" runat="server" Text=""></asp:Label>
                     </p>
                         <asp:Button ID="btnLimpar" runat="server" Text="Limpar" OnClick="btnLimpar_Click" />
-                        <asp:Button ID="btnVoltar" runat="server" Text="Voltar" OnClick="btnVoltar_Click" />
+<%--                        <asp:Button ID="btnVoltar" runat="server" Text="Voltar" OnClick="btnVoltar_Click" />--%>
             </div>
      
                <div class="quadrado2" style="overflow-y:auto">

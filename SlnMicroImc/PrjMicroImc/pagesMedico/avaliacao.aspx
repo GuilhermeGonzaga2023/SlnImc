@@ -21,7 +21,7 @@
     </header>
         <div class="GRID">
             <div class="quadradoAva">
-                <h2>Avaliação</h2>
+                <h2> Criar Avaliação</h2>
 
                 <p>
                     <asp:Label ID="Label1" runat="server" Text="médico que está logado: " ></asp:Label>

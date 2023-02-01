@@ -146,6 +146,10 @@ namespace PrjMicroImc
                     }
 
                 }
+                else
+                {
+                    lblMensagem.Text = "selecione Medico ou Paciente";
+                }
             }
             catch (Exception ex)
             {

@@ -40,6 +40,7 @@
 
             </p>
             <p>
+                <asp:Label ID="lblMsg" runat="server" Text="A Dieta precisa ser criada para concluir a avaliação"></asp:Label>
                 <asp:Label ID="lblMensagem" runat="server" Text=""></asp:Label>
 
             </p>
@@ -47,11 +48,11 @@
                 <asp:Button ID="btnCriarDieta" runat="server" Text="Criar Dieta" OnClick="btnCriarDieta_Click" />
 
             </p>
-            <p>
+<%--            <p>
                 <asp:Button ID="btnVoltar" runat="server" Text="Voltar" OnClick="btnVoltar_Click" />
 
             </p>
-
+--%>
         </div>
     </form>
 </body>

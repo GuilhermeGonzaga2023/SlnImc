@@ -21,7 +21,7 @@
     </header>
         <div class="GRID">
             <div class="quadradoDieta">
-                 <h2>Dieta</h2>
+                 <h2>Editar Dieta</h2>
                     <p>
                         <asp:Label ID="Label1" runat="server" Text="Dieta para o paciente:"></asp:Label>
                         <asp:Label ID="lblNome" runat="server" Text=""></asp:Label>
